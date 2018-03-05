@@ -1,0 +1,33 @@
+{
+  "name": "crypto-roi-cli",
+  "version": "1.0.0",
+  "description": "A ROI calculator of holding top coins on coinmarketcap.com",
+  "main": "index.js",
+  "author": "Phat Pham <phatpham9@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phatpham9/crypto-roi-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/phatpham9/crypto-roi-cli/issues"
+  },
+  "homepage": "https://github.com/phatpham9/crypto-roi-cli#readme",
+  "engines": {
+    "node": ">=9"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "crypto-roi": "^1.0.0",
+    "yargs": "^10.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "roi": "index.js"
+  }
+}
