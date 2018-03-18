@@ -1,30 +1,25 @@
 language: node_js
-
 node_js:
-- 9
-
+    - 9
 install:
-- yarn
-
+    - yarn
 cache:
-  yarn: true
-  directories:
-  - node_modules
-
+    yarn: true
+    directories:
+        - node_modules
 script:
-- yarn start
-
+    - 'yarn start'
 deploy:
-  provider: npm
-  email: phatpham9@gmail.com
-  api_key: "$NPM_AUTH_TOKEN"
-  skip_cleanup: true
-  on:
-    node: '9'
-    branch: master
-    tags: true
-
+    provider: npm
+    email: phatpham9@gmail.com
+    api_key: $NPM_AUTH_TOKEN
+    skip_cleanup: true
+    on:
+        node: '9'
+        branch: master
+        tags: true
 notifications:
-  email: false
-  slack:
-    secure: kfesueyxzIcGONLbO0VEXcNnVRlPe3XS+KRfvFhsADVgPa/X/yQo9/NZwrPqMPK+i5QxcpkXQ5r4TmJic7pILTSwuNXj0o4YlEIWM+nd0z0fWqRUa/LQynU7dBh/v3ygwbLJU7VTe0p6uWf5jaloYrsCNuCVg6ZS51aJ3WwV4KBFkYyZPGXtAkFNgAZasttuHct4ls5lEZBF/ebOCtz4JNxcie5MwlqZXl0q4vMfszRgnyD9748tgR1ADG+HtDXyfYyfZ4fjcHP8POe9Wz/5/m9uqDNLn2F7ZTl470+sOqLoEJQmIjSULBveKwCqFYPHKpGE1KC9QVlaXuM0yok0zfEbo44IbHmggdTtq9GnaulCUIPZZRlfXdbPlOsinPQXBzMT4tnFuL0fSvC3Aw0NIOoNwlfNyJ8q6wLInXCWp9cCqQh5O64ScNs3SV0T0Sh+Zeg3YEAfAArgFBlnZXhxSNSP0IvhHrjcBTErouu/kegkFmxHKsEFIjExYt0tjL9kuwg7xW/TBYMFuq5sqT23MmPcR7OB+7unt3wTGCdwcvNOGmuqwJu6adAUTSs8N4KQHcfC6omvCMxDrLpCMWU5d7Br6iJFcUe0KLEAgUKCKRf9YsYI3VAZWkf+d63917I/4EDSdlM+QjmaH78vkbGjznUOvFqhTZUoycNNdAEwusA=
+    email: false
+    slack:
+        secure: kfesueyxzIcGONLbO0VEXcNnVRlPe3XS+KRfvFhsADVgPa/X/yQo9/NZwrPqMPK+i5QxcpkXQ5r4TmJic7pILTSwuNXj0o4YlEIWM+nd0z0fWqRUa/LQynU7dBh/v3ygwbLJU7VTe0p6uWf5jaloYrsCNuCVg6ZS51aJ3WwV4KBFkYyZPGXtAkFNgAZasttuHct4ls5lEZBF/ebOCtz4JNxcie5MwlqZXl0q4vMfszRgnyD9748tgR1ADG+HtDXyfYyfZ4fjcHP8POe9Wz/5/m9uqDNLn2F7ZTl470+sOqLoEJQmIjSULBveKwCqFYPHKpGE1KC9QVlaXuM0yok0zfEbo44IbHmggdTtq9GnaulCUIPZZRlfXdbPlOsinPQXBzMT4tnFuL0fSvC3Aw0NIOoNwlfNyJ8q6wLInXCWp9cCqQh5O64ScNs3SV0T0Sh+Zeg3YEAfAArgFBlnZXhxSNSP0IvhHrjcBTErouu/kegkFmxHKsEFIjExYt0tjL9kuwg7xW/TBYMFuq5sqT23MmPcR7OB+7unt3wTGCdwcvNOGmuqwJu6adAUTSs8N4KQHcfC6omvCMxDrLpCMWU5d7Br6iJFcUe0KLEAgUKCKRf9YsYI3VAZWkf+d63917I/4EDSdlM+QjmaH78vkbGjznUOvFqhTZUoycNNdAEwusA=
+        on_pull_requests: false
